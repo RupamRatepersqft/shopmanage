@@ -1,0 +1,250 @@
+- var status_toggle = (sidebar_open ? undefined : 'checked');
+
+
+// Page Header Start
+.page-header
+  .header-wrapper.row.m-0 
+    .header-logo-wrapper.col-auto.p-0
+      .logo-wrapper
+        a(href='index.html')
+          img.img-fluid(src='../assets/images/logo/logo.png', alt='')
+      .toggle-sidebar
+        .status_toggle.middle.sidebar-toggle
+          img.for-light(src="../assets/images/menu-icon.svg", alt="")
+          img.for-dark(src="../assets/images/menu-icon-dark.png", alt="")
+
+    .left-side-header.col.ps-0.d-none.d-md-block
+      .input-group
+        span.input-group-text#basic-addon1
+          i(data-feather="search")
+        input.form-control(type="text"  placeholder="Search here.." aria-label="search" aria-describedby="basic-addon1")
+    .nav-right.col-10.col-sm-6.pull-right.right-header.p-0
+      ul.nav-menus
+        
+        li
+          .mode.animated.backOutRight
+            i.fa.fa-moon-o
+        li.d-md-none.resp-serch-input
+          .resp-serch-box
+            i(data-feather='search')
+          
+          .form-group.search-form
+              input(type="text" placeholder="Search here...")
+        li.cart-nav.onhover-dropdown
+          .cart-box
+            i(data-feather='shopping-cart')
+            span.badge.rounded-pill.badge-primary 2
+          .cart-dropdown.onhover-show-div
+            div.dropdown-title
+              h6.f-18.mb-0 Cart
+              a.f-right(href="cart.html") Go to shoping bag
+            ul
+              li
+                .media
+                  img.img-fluid.b-r-5.me-3.img-60(src='../assets/images/banner-1.jpg', alt='')
+                  .media-body
+                    h6 Lorem ipsum dolor sit amet cons....
+                    p $500
+                  .cart-quantity
+                      span.plus
+                        i.fa.fa-plus
+                      input.count(type="text" name="qty" value="3")
+                      span.minus
+                        i.fa.fa-minus
+                        
+                  .close-circle
+                    a(href='#')
+                        i(data-feather="trash-2")
+              li
+                .media
+                  img.img-fluid.b-r-5.me-3.img-60(src='../assets/images/product-4.png', alt='')
+                  .media-body
+                    h6 Lorem ipsum dolor sit amet cons....
+                    p $500
+                  .cart-quantity 
+                      span.plus
+                        i.fa.fa-plus
+                      input.count(type="text" name="qty" value="3")
+                      span.minus
+                        i.fa.fa-minus
+                        
+                  .close-circle
+                    a(href='#')
+                        i(data-feather="trash-2")
+              li
+                .media
+                  img.img-fluid.b-r-5.me-3.img-60(src='../assets/images/product-6.jpg', alt='')
+                  .media-body
+                    h6 Lorem ipsum dolor sit amet cons....
+                    p $500
+                  .cart-quantity 
+                      span.plus
+                        i.fa.fa-plus
+                      input.count(type="text" name="qty" value="3")
+                      span.minus
+                        i.fa.fa-minus
+
+  
+                  .close-circle
+                    a(href='#')
+                      i(data-feather="trash-2")
+             
+              li.order-total
+                h6.mb-0
+                  |Total : 
+                  span.f-right $100.00
+                a.btn.btn-primary.view-checkout(href='checkout.html')
+                  | Checkout
+        li.onhover-dropdown
+          .notification-box
+            i(data-feather='star')
+
+          .onhover-show-div.bookmark-flip
+            .flip-card
+              .flip-card-inner
+                .front
+                  h6.f-18.mb-0.dropdown-title Bookmark
+                  ul.bookmark-dropdown.pb-0
+                    li.p-0
+                      .row
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='file-text')
+                            span Forms
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='user')
+                            span Profile
+                        .col-4.text-center
+                          .bookmark-content
+                            .bookmark-icon
+                              i(data-feather='server')
+                            span Tables
+                    li.text-center
+                      a.flip-btn#flip-btn.btn.btn-primary(href="javascript:void(0)") Add New Bookmark
+                .back
+                  ul
+                    li
+                      .bookmark-dropdown.flip-back-content
+                        input(type='text' placeholder='search...')
+                    li
+                      a.f-w-700.d-block.flip-back#flip-back(href="javascript:void(0)")
+                        | Back
+
+
+        li.onhover-dropdown
+          .notification-box
+            i(data-feather='bell' class='notify-ani')  
+            span.badge.rounded-pill.badge-warning 4 
+          .onhover-show-div.notification-dropdown
+            div.dropdown-title
+                h6.f-18.mb-0 Notification
+                a.f-right(href="#") Mark all                            
+            ul
+              li
+                .media
+                    .notification-img.bg-light-primary
+                       img(src="../assets/images/avtar/man.png", alt="")
+                    .media-body
+                      h5 Jhone Doe
+                      p Lorem ipsum dolor sit amet...
+                      
+                    .notification-right
+                      span 10:20
+                      a(href="")
+                         i.fa.fa-share
+                      a(href="").text-danger
+                         i.fa.fa-trash
+              li  
+                .media
+                      .notification-img.bg-light-secondary
+                         img(src="../assets/images/avtar/teacher.png", alt="")
+                      .media-body
+                        h5 Jhone Doe
+                        p Lorem ipsum dolor sit amet...
+                        
+                      .notification-right
+                        span 10:20
+                        a(href="")
+                          i.fa.fa-share
+                        a(href="").text-danger
+                          i.fa.fa-trash
+              li
+                  .media
+                      .notification-img.bg-light-info
+                           img(src="../assets/images/avtar/teenager.png", alt="")
+                      .media-body
+                        h5 Jhone Doe
+                        p Lorem ipsum dolor sit amet...
+                        
+                      .notification-right
+                        span 10:20
+                        a(href="")
+                          i.fa.fa-share
+                        a(href="").text-danger
+                          i.fa.fa-trash
+              li
+                  .media
+                      .notification-img.bg-light-success
+                         img(src="../assets/images/avtar/chinese.png", alt="")
+                      .media-body
+                        h5 Jhone Doe
+                        p Lorem ipsum dolor sit amet...
+                        
+                      .notification-right
+                        span 10:20
+                        a(href="")
+                          i.fa.fa-share
+                        a(href="").text-danger
+                          i.fa.fa-trash
+              
+              li.p-0
+                a.btn.btn-primary(href="#") Check all
+
+        
+        li.maximize
+          a.text-dark(href='#!', onclick='javascript:toggleFullScreen()')
+            i(data-feather='maximize')
+        li.profile-nav.onhover-dropdown.pe-0.py-0.me-0
+          .media.profile-media
+            img.b-r-10(src='../assets/images/profile-image.png', alt='')
+            .media-body
+              span Emay Walter
+              p.mb-0.font-roboto Admin 
+                i.middle.fa.fa-angle-down
+          ul.profile-dropdown.onhover-show-div
+            li
+              a(href='user-profile.html')
+                i(data-feather='user')
+                span Account 
+            li
+              a(href='email-application.html')
+                i(data-feather='mail')
+                span Inbox
+            li
+              a(href='kanban.html')
+                i(data-feather='file-text')
+                span Taskboard
+            li
+              a(href='edit-profile.html')
+                i(data-feather='settings')
+                span Settings
+            li
+              a(href='login.html')
+                i(data-feather='log-in') 
+                span Log in
+
+    //- .d-lg-none.mobile-toggle.pull-right
+    //-     i(data-feather='more-horizontal')
+    script.result-template(type='text/x-handlebars-template').
+      <div class="ProfileCard u-cf">                        
+      <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+      <div class="ProfileCard-details">
+      <div class="ProfileCard-realName">{{name}}</div>
+      </div>
+      </div>
+    script.empty-template(type='text/x-handlebars-template').
+      <div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div>
+// Page Header Ends                              

@@ -1,0 +1,356 @@
+- var chartist              = true;
+- var theme_customizer      = true;
+- var apex                  = true;
+- var dashboard_default     = true;
+- var notify                = true;
+- var animate               = true;
+- var knobchart             = true;
+- var page_knobchart        = true;
+- var date_picker           = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var sidebar               = true;
+- var scrollbar             = true;
+- var height_equal          = true;
+
+
+doctype html
+html(lang='en') 
+  include ../../components/header-files
+  body
+    .loader-wrapper
+      .push-pop.loader
+        div
+        div
+      
+    //- include ../../components/taptop
+    // page-wrapper Start
+    #pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header
+      // Page Body Start
+      .page-body-wrapper
+        include ../../components/sidebar  
+        .page-body
+          .container-fluid         
+            .page-title
+              .row
+                .col-12.col-sm-6
+                  h3
+                    | Default
+                .col-12.col-sm-6
+                  ol.breadcrumb
+                    li.breadcrumb-item  
+                      a(href='index.html').home-item
+                        i(data-feather="home")
+                    li.breadcrumb-item  Dashboard
+                    li.breadcrumb-item.active  Default
+                          
+          // Container-fluid starts
+          .container-fluid.default-dashboard-section
+            .row 
+              .col-xxl-6.col-xl-12.morning-sec
+                .card.profile-greeting
+                  .card-body
+                    .media
+                      .media-body 
+                        .greeting-user
+                          h1 Hello, Harry Mendez
+                          h4 Welcome back, your dashboard is ready!
+                          .whatsnew-btn
+                            a.btn.btn-outline-white_color Get Started
+                                  i(data-feather="arrow-right")
+                    .cartoon-img
+                          img(src="../assets/images/images.svg", alt="").img-fluid        
+              .col-xxl-6.col-xl-12.dashboard-chart-sec
+                .row
+                  .col-xxl-6.col-md-6.col-lg-6.earning-cart-sec
+                    .card.earning-card.pb-0.o-hidden
+                      .card-header.earning-back
+                      .card-body.p-0
+                        .earning-content
+                            img(src="../assets/images/avatar.jpg", alt="").img-fluid  
+                            h4 Today's Earning
+                            span (Mon 15 - Sun 21)
+                            h6 $573.67
+                            #earning-chart
+                  .col-xxl-6.col-md-6.col-lg-6.weekly-column-chart-sec
+                    .card
+                      .card-body
+                          .weekly-column-chart
+                                .small-chart-new  
+              .col-xxl-3.col-xl-6.news
+                .card
+                  .card-header.card-no-border 
+                    .header-top
+                      h5.m-0 News &amp; Update
+                      .icon-box.onhover-dropdown
+                            i(data-feather="more-horizontal")
+                            .icon-box-show.onhover-show-div
+                              ul 
+                                li 
+                                  a  
+                                    | Today
+                                li 
+                                  a 
+                                    | Yeasterday
+                                li  
+                                  a 
+                                    | Tommorow                              
+                  .card-body.pt-0
+                    .news-update.media
+                      img.img-fluid.me-3.b-r-5(src="../assets/images/dashboard/Rectangle-26.jpg" alt="")
+                      .media-body
+                        h5 Google  Apply
+                        p Today's News Headlines, Breaking...
+                      span.badge.badge-light-theme-light.font-theme-light 1day ago
+                       
+                    .news-update.media  
+                      img.img-fluid.me-3.b-r-5(src="../assets/images/dashboard/Rectangle-27.jpg" alt="")
+                      .media-body
+                        h5 Business Logo 
+                        p Check out latest..
+                      span.badge.badge-light-theme-light.font-theme-light 1day ago
+
+                    .news-update.media
+                      img.img-fluid.me-3.b-r-5(src="../assets/images/dashboard/Rectangle-28.jpg" alt="")
+                      .media-body
+                        h5 Business Project 
+                        p News in English: Get all Breaking...  
+                      span.badge.badge-light-theme-light.font-theme-light 1day ago
+
+                    .news-update.media
+                      img.img-fluid.me-3.b-r-5(src="../assets/images/dashboard/Rectangle-29.jpg" alt="")
+                      .media-body
+                        h5 Recruitment in it
+                        p Technology and Indian Business News...
+                      span.badge.badge-light-theme-light.font-theme-light 1day ago
+              .col-xxl-5.col-xl-12.ongoing-project-sec
+                .row
+                  .col-xl-12
+                    .card.ongoing-project
+                      .card-header.card-no-border
+                        .media.media-dashboard
+                          .media-body 
+                            h5.mb-0 Ongoing Projects         
+                          .icon-box.onhover-dropdown
+                            i(data-feather="more-horizontal")
+                            .icon-box-show.onhover-show-div
+                              ul 
+                                li 
+                                  a  
+                                    | Done
+                                li 
+                                  a 
+                                    | Pending
+                                li  
+                                  a 
+                                    | Rejected
+                                li 
+                                  a
+                                    | In Progress
+                      .card-body.pt-0
+                        .ongoing-project-table.table-responsive
+                          table.table.table-bordernone
+                            thead 
+                                tr 
+                                  th 
+                                    span Name 
+                                  th 
+                                    span Date
+                                  th 
+                                    span Project 
+                                  th 
+                                    span Status   
+                            tbody 
+                              tr
+                                td
+                                  .media
+                                    .square-box.me-2
+                                      img.img-fluid.b-r-5(src="../assets/images/avtar/boy.png" alt="")
+                                    .media-body.ps-2
+                                      .avatar-details
+                                        h5 Gary
+                                        span  UK Desig Team
+                                td.img-content-box
+                                  h5 12 May 2020
+                                  span In 6 Days
+                                td
+                                  h5 Product Design
+                                  span Toyota
+                                td
+                                  .badge.badge-light-primary Done
+                              tr
+                                td
+                                  .media
+                                    .square-box.me-2
+                                      img.img-fluid.b-r-5(src="../assets/images/avtar/girl.png" alt="")
+                                    .media-body.ps-2
+                                      .avatar-details
+                                        h5 Gary
+                                        span  UK Desig Team
+                                td.img-content-box
+                                  h5 12 May 2020
+                                  span In 6 Days
+                                td
+                                  h5 Product Design
+                                  span Toyota
+                                td
+                                  .badge.badge-light-secondary Pending
+                              tr
+                                td
+                                  .media
+                                    .square-box.me-2
+                                      img.img-fluid.b-r-5(src="../assets/images/avtar/man.png" alt="")
+                                    .media-body.ps-2
+                                      .avatar-details
+                                        h5 Gary
+                                        span  UK Desig Team
+                                td.img-content-box
+                                  h5 12 May 2020
+                                  span In 6 Days
+                                td
+                                  h5 Product Design
+                                  span Toyota
+                                td
+                                  .badge.badge-light-danger Rejected
+                              tr
+                                td
+                                  .media
+                                    .square-box.me-2
+                                      img.img-fluid.b-r-5(src="../assets/images/avtar/woman.png" alt="")
+                                    .media-body.ps-2
+                                      .avatar-details
+                                        h5 Gary
+                                        span  UK Desig Team
+                                td.img-content-box
+                                  h5 12 May 2020
+                                  span In 6 Days
+                                td
+                                  h5 Product Design
+                                  span Toyota
+                                td
+                                  .badge.badge-light-info In Progress
+              .col-xxl-4.col-xl-6.recent-activity-sec
+                .card
+                  .card-header.card-no-border
+                        .media.media-dashboard
+                          .media-body 
+                            h5.mb-0 Recent Activity      
+                          .icon-box.onhover-dropdown
+                            i(data-feather="more-horizontal")
+                            .icon-box-show.onhover-show-div
+                              ul 
+                                li 
+                                  a  
+                                    | Latest 
+                                li 
+                                  a 
+                                    | Earlist
+                               
+                  .card-body.pt-0.recent-activity
+                    .media
+                      .square-box.me-2
+                          img.img-fluid.b-r-5(src="../assets/images/avtar/teacher.png" alt="")
+                      .media-body
+                        h5 Alana Brady added new event
+                        h6.font-primary Sunday Cooking Class
+                      span.badge.badge-light-theme-light.font-theme-light 2 hours ago
+
+                    .media
+                      
+                      .square-box.me-2
+                          img.img-fluid.b-r-5(src="../assets/images/avtar/teenager.png" alt="")
+                      .media-body
+                        h5 Lena Burton added new
+                        h6 Comment on 
+                            span.font-primary Vegetarian food fest
+                        .activity-msg 
+                          span.activity-msg-box 
+                            | Again this was our mistake, we are truly sorry for not adhering to a strictly non animal product event.
+                      span.badge.badge-light-theme-light.font-theme-light 10 jul 2020
+
+                    .media
+                     
+                      .square-box.me-2
+                          img.img-fluid.b-r-5(src="../assets/images/avtar/chinese.png" alt="")
+                      .media-body
+                        h5 Max Simmons attached 2
+                        h6 photos to 
+                            span.font-primary Food photography Class
+                        .d-flex
+                          .inner-img
+                            img.img-fluid(src='../assets/images/dashboard/img-26.png',alt='Product-1')
+                          .inner-img.ms-3
+                            img.img-fluid(src='../assets/images/dashboard/image-20.jpg',alt='Product-2')
+                      span.badge.badge-light-theme-light.font-theme-light 22 Jun 2020
+              
+              .col-xxl-6.col-xl-12.total-transactions-sec
+                .card
+                  .row.m-0
+                    .col-lg-6.col-sm-6.p-0
+                      .card-header.card-no-border
+                              h5 Total Transactions
+                      .card-body.pt-0
+                        div  
+                           #transaction-chart
+                    .col-lg-6.col-sm-6.p-0.report-sec
+                      .card-header.card-no-border 
+                        .header-top
+                          h5.m-0 News &amp; Update
+                          .icon-box.onhover-dropdown
+                                i(data-feather="more-horizontal")
+                                .icon-box-show.onhover-show-div
+                                  ul 
+                                    li 
+                                      a  
+                                        | Today
+                                    li 
+                                      a 
+                                        | Yeasterday
+                                    li  
+                                      a 
+                                        | Tommorow
+                  
+                      .card-body.pt-0
+                        .row 
+                          .col-6.report-main
+                            .report-content.text-center  
+                              h6.font-theme-light Report
+                              h5 +86.53%
+                              .progress.progress-round-primary
+                                .progress-bar(role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100")
+
+                          .col-6
+                            .report-content.text-center  
+                              h6.font-theme-light Report
+                              h5 +86.53%
+                              .progress.progress-round-secondary
+                                .progress-bar(role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100")
+
+                          .col-12         
+                            .media.report-perfom
+                              .media-body
+                                h6.font-theme-light Performance 
+                                h5.m-0 +93.82%
+                              button.btn.btn-primary New Report
+              .col-xxl-3.col-md-6.yearly-chart-sec
+                .card
+                  .card-header.card-no-border
+                      h5.f-22.pb-2 $3,500,000
+                      h6.font-theme-light.f-14.m-0 November 2021
+                  .card-body.pt-0
+                      div 
+                          #yearly-chart
+              .col-xxl-3.col-md-6.premium-access-sec
+                .card.bg-primary  
+                  .card-body
+                    .premium-access
+                      h6.f-22 Premium Access!
+                      span We add 20+ new features and update community in your project We add 20+ new features
+                      button.btn.btn-outline-white_color  Try now for free
+          
+          // Container-fluid Ends
+        include ../../components/footer        
+    include ../../components/footer-files
+
+
