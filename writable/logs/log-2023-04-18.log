@@ -1,0 +1,112 @@
+INFO - 2023-04-18 08:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 08:54:33 --> Undefined array key "image_file"
+in APPPATH\Controllers\Blog.php on line 72.
+ 1 APPPATH\Controllers\Blog.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image_file"', 'APPPATH\\Controllers\\Blog.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 08:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 08:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 09:01:36 --> fopen(23.jpg): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(23.jpg): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('23.jpg', 'r')
+ 3 APPPATH\Controllers\Blog.php(82): FtpClient\FtpClient->putFromPath('23.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 09:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 09:10:49 --> fopen(Guwahati_City.jpg): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(Guwahati_City.jpg): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('Guwahati_City.jpg', 'r')
+ 3 APPPATH\Controllers\Blog.php(82): FtpClient\FtpClient->putFromPath('Guwahati_City.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 09:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 09:24:29 --> fopen(migration.png): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(migration.png): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('migration.png', 'r')
+ 3 APPPATH\Controllers\Blog.php(76): FtpClient\FtpClient->putFromPath('migration.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-18 09:28:14 --> fopen(migration.png): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(migration.png): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('migration.png', 'r')
+ 3 APPPATH\Controllers\Blog.php(76): FtpClient\FtpClient->putFromPath('migration.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 09:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 09:37:09 --> fopen(migration.png): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(migration.png): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('migration.png', 'r')
+ 3 APPPATH\Controllers\Blog.php(76): FtpClient\FtpClient->putFromPath('migration.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 09:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 09:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 09:44:19 --> fopen(Screenshot_7.png): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(Screenshot_7.png): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('Screenshot_7.png', 'r')
+ 3 APPPATH\Controllers\Blog.php(76): FtpClient\FtpClient->putFromPath('Screenshot_7.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-18 10:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 10:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-18 10:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-18 10:57:25 --> fopen(firm_lic_app.png): Failed to open stream: No such file or directory
+in APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php on line 623.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(firm_lic_app.png): Failed to open stream: No such file or directory', 'APPPATH\\Libraries\\phpftp\\nicolab\\php-ftp-client\\src\\FtpClient\\FtpClient.php', 623)
+ 2 APPPATH\Libraries\phpftp\nicolab\php-ftp-client\src\FtpClient\FtpClient.php(623): fopen('firm_lic_app.png', 'r')
+ 3 APPPATH\Controllers\Blog.php(76): FtpClient\FtpClient->putFromPath('firm_lic_app.png')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->post_blog()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
